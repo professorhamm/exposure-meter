@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+</head>
+<body>
+
+    <div class="aperture">
+            <input id="apertureSlider" type="range" min="0" max="2" value="1" oninput="exposureChange(this.value)">
+            <output id="apertureDisplay"></output>
+    </div>
+    
+    <div class="shutter">
+            <input id="shutterSlider" type="range" min="0" max="2" value="1" oninput="exposureChange(this.value)">
+            <output id="shutterDisplay"></output>
+    </div>
+    
+    <div class="iso">
+            <input id="isoSlider" type="range" min="0" max="2" value="1" oninput="exposureChange(this.value)">
+            <output id="isoDisplay"></output>
+    </div>
+
+    <div class="exposure">
+            <output id="exposureDisplay"></output>
+    </div>
+
+    <div class="image">
+            <img id="imageDisplay" />
+    </div>
+       
+    <script src="script.js"></script>
+</body>
+</html>
